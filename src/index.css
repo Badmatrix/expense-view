@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  @apply bg-gray-50
+}
+.transaction-cards .card{
+  @apply  rounded-2xl col-span-1 h-20 md:h-24 w-56 mx-3 md:w-[450px]  my-5 md:mx-auto bg-gray-100 md:text-white  shadow-md py-3 px-2 opacity-95 text-center block
+}
+.transaction-cards .card span{
+  @apply block font-semibold tracking-wider 
+}
+.transaction-cards .card.income{
+  @apply text-green-600 md:bg-green-600 md:text-white
+}
+.transaction-cards .card.outgone {
+  @apply md:text-white text-red-500 md:bg-red-500
+}
+.transactions .transactions-header tr{
+  @apply capitalize
+}
+.transactions .transactions-header tr {
+  @apply mx-3 px-3 text-center
+}
+.transactions .transactions-header tr td{
+  @apply py-3 border-b shadow-sm bg-white
+}
+.transactions .transactions-header tr td{
+  @apply font-semibold
+}
+.transactions .transactions-header tr td.transfer{
+  @apply font-bold text-lg
+}
+.transactions .transactions-header tr td.transfer.income{
+  @apply text-green-800
+}
+.transactions .transactions-header tr td.transfer.expense {
+  @apply text-red-600
+}
+
+form label{
+@apply block my-5 mx-3 font-medium italic capitalize
+}
+form select{
+  @apply outline outline-1 rounded-lg py-3 px-3 w-48 
+}
+form label input{
+  @apply mx-3 px-3 py-3  rounded-lg w-1/3 outline outline-1 
+}
+form label input,form label select{
+  @apply mx-3 w-80
+}
